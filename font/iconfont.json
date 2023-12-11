@@ -1,0 +1,30 @@
+{
+  "id": "4253667",
+  "name": "purchase",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7549352",
+      "name": "数据",
+      "font_class": "RectangleCopy",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "7549817",
+      "name": "单据",
+      "font_class": "RectangleCopy1",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "7549824",
+      "name": "仓库",
+      "font_class": "RectangleCopy2",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    }
+  ]
+}

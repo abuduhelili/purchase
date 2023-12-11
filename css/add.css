@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf0f3;
+}
+
+.topContent {
+  width: 100%;
+  font-size: 0.35rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0 0.0133rem rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+}
+
+.topContent .topLine {
+  height: 1.2rem;
+  padding: 0 0.2667rem;
+  border-top: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topContent .topLine .le {
+  color: #aaa;
+}
+
+.topContent .topLine .ri {
+  color: black;
+  width: 30%;
+  height: 0.5rem;
+  border: transparent;
+  border-radius: 0.05rem;
+  box-shadow: 0 0 0 0.0133rem rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+  font-size: 0.2rem;
+}
+
+.titleText {
+  width: 9.4667rem;
+  margin: 0.3rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-indent: 0.2rem;
+  font-size: 0.35rem;
+}
+
+.titleText::before {
+  content: '';
+  margin-left: 0.2rem;
+  width: 0.04rem;
+  height: 0.3rem;
+  color: #087ffd;
+  background-color: #087ffd;
+  border: 0.05rem solid #087ffd;
+}
+
+.titleText button {
+  color: #087ffd;
+  font-size: 0.35rem;
+  position: absolute;
+  right: 0.1rem;
+  border: transparent;
+}
+
+.listBox {
+  width: 9.4667rem;
+  margin: 0rem auto;
+  background-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.listBox .item {
+  background-color: white;
+  width: 9.4667rem;
+  margin: 0.3rem auto;
+  border: 1px solid #087ffd;
+  border-radius: 0.1333rem;
+  box-shadow: 0 0 0 0.0133rem rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+}
+
+.listBox .item .header {
+  width: 100%;
+  height: 0.74rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.listBox .item .header span {
+  background-color: #087ffd;
+  color: white;
+  position: absolute;
+  height: 0.5rem;
+  padding: 0 0.2rem;
+  line-height: 0.5rem;
+  font-size: 0.25rem;
+  font-weight: 700;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  left: -0.15rem;
+  top: 0.2rem;
+}
+
+.listBox .item .header span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -0.11rem;
+  width: 0;
+  height: 0;
+  border-bottom: 0.11rem solid #0569d2;
+  border-left: 0.15rem solid transparent;
+}
+
+.listBox .item .header span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.11rem;
+  width: 0;
+  height: 0;
+  border-top: 0.11rem solid #0569d2;
+  border-left: 0.15rem solid transparent;
+}
+
+.listBox .item .header button {
+  position: absolute;
+  height: 0.5rem;
+  right: 0.2rem;
+  background-color: transparent;
+  border: transparent;
+}
+
+.listBox .item .content {
+  width: 100%;
+  font-size: 0.35rem;
+  overflow: hidden;
+  padding-bottom: 0.3rem;
+}
+
+.listBox .item .content .line {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+  line-height: 0.8rem;
+}
+
+.listBox .item .content .line .le {
+  color: #aaa;
+}
+
+.listBox .item .content .line .ri {
+  width: 4rem;
+  font-size: 0.3rem;
+  text-align: right;
+  color: black;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+
+.listBox .item .content #materialNum .ri {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  overflow: visible;
+}
+
+.listBox .item .content #materialNum .ri input {
+  width: 1rem;
+  border: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 0.3rem;
+  color: black;
+}
+
+.listBox .item .content #materialNum .ri input::placeholder {
+  text-align: center;
+}
+
+.listBox .item .content #materialNum .ri button {
+  background: white;
+}
+
+.listBox .item .content #require,
+.listBox .item .content #text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+  border-top: 1px solid #aaa;
+}
+
+.listBox .item .content #require .le,
+.listBox .item .content #text .le {
+  color: #aaa;
+}
+
+.listBox .item .content #require .ri,
+.listBox .item .content #text .ri {
+  overflow: hidden;
+  width: 6rem;
+  font-size: 0.3rem;
+  text-align: right;
+  color: black;
+  word-wrap: break-word;
+  border: none;
+  outline: none;
+  white-space: pre-line;
+}
+
+.bottom-option {
+  display: flex;
+  justify-content: space-between;
+  width: 7.8667rem;
+  height: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.bottom-option .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4667rem;
+  height: 100%;
+  font-size: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.bottom-option #cancel-btn {
+  background-color: #c5cfd9;
+  color: black;
+}
+
+.bottom-option #save-btn {
+  background-color: #087ffd;
+  color: white;
+}

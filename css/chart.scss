@@ -1,0 +1,44 @@
+$base-bgcolor: #edf0f3;
+$base-blue: #087ffd;
+$base-width: 9.4667rem;
+$base-border: 0.0133rem solid transparent;
+$border-radius: 0.1333rem;
+$box-shadow: 0 0 0 0.0133rem rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $base-bgcolor;
+}
+
+.chartBox {
+  width: $base-width;
+  margin: auto;
+  // background-color: transparent;
+  // border: 1px red solid;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+
+  .topTitle {
+    // border: 1px solid red;
+    height: 0.8rem;
+    margin-top: 0.5rem;
+    background: rgb(255, 255, 255);
+    font-size: 0.35rem;
+
+    span {
+      display: block;
+      width: 8.8rem;
+      // border: 1px solid red;
+    }
+  }
+  .item {
+    // border: 1px solid red;
+    margin-bottom: 0.3rem;
+    background: white;
+  }
+}

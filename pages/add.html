@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增采购需求单</title>
+    <link rel="stylesheet" href="/css/add.css" />
+  </head>
+  <body>
+    <!-- 顶部信息 -->
+    <div class="topContent">
+      <div class="topLine" id="reqDate">
+        <span class="le">需求日期</span>
+        <!-- <span class="ri">2023/05/10</span> -->
+        <input type="date" class="ri" placeholder="请输入" name="" id="" />
+      </div>
+      <div class="topLine" id="reqDepart">
+        <span class="le">需求部门</span>
+        <select class="ri" name="reqDeparts" id="departSelects"></select>
+      </div>
+
+      <div class="topLine" id="reqCode">
+        <span class="le">需求单编号</span>
+        <input class="ri" type="text" />
+      </div>
+      <div class="topLine" id="reqBy">
+        <span class="le">制单人</span>
+        <select class="ri" name="reqBy" id="bySelects"></select>
+      </div>
+    </div>
+
+    <!-- 中间标题和新增按钮 -->
+    <div class="titleText">
+      <span class="le">物料详情</span>
+      <button class="ri">新增</button>
+    </div>
+
+    <!-- 下方列表 -->
+    <div class="listBox"></div>
+
+    <!-- 选项 -->
+    <div class="bottom-option">
+      <button class="item" id="cancel-btn">取消</button>
+      <button class="item" id="save-btn">保存</button>
+    </div>
+
+    <!--  -->
+    <!-- 引入js -->
+    <!-- 引入Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.js"></script>
+    <script src="/js/flexible.js"></script>
+    <script src="/js/cookie.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/add.js"></script>
+  </body>
+</html>
